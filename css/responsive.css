@@ -1,0 +1,139 @@
+@media(max-width:768px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header .header-2 .rice{
+        display: block;
+    }
+    
+    header .header-2 .navbar{
+        position: absolute;
+        top: 100%; left: -120%;
+    }
+
+    header .header-2 .navbar ul{
+        flex-flow: column;
+        justify-content: center;
+        min-height: calc(100vh - 6rem);
+        padding-bottom: 6rem;
+        background: orange;
+        width: 32rem;
+    }
+
+    header .header-2 .navbar ul li{
+        width: 100%;
+        text-align: center;
+    }
+    
+    header .header-2 .navbar ul li a{
+        font-size: 2.5rem;
+        display: block;
+    }
+
+    header .header-2 .fa-times{
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+
+    header .header-2 i{
+        transition: transform 0.3s ease, opacity 0.3s;
+        display: inline-block;
+    }
+
+    header .header-2 .fa-bowl-food {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    header .header-2 .show{
+        left: 0;
+    }
+
+    .home .content h1{
+        left: 0;
+    }
+
+    .home .content p{
+        width: auto;
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:400px){
+
+    .home .content p{
+        width: auto;
+        font-size: 15px;
+    }
+
+    html{
+        font-size: 50%;
+    }
+    header .header-1{
+        flex-flow: column;
+    }
+
+    header .header-1 .logo{
+        padding-bottom: 1rem;
+    }
+
+    header .header-2 ul{
+        width: 100vw;
+    }
+    
+    .about .row{
+        flex-flow: column;
+    }
+
+    .about .content2 h3 {
+        font-size: 2.5rem;
+        color: #333;
+        padding: 10px 0 10px 0;
+    }
+
+    .about .row .image img{
+        width: 85%;
+    } 
+
+    .about h1{
+        font-size: 5rem;
+    }
+
+    
+.about .heading::after {
+    width: 40rem;
+   
+}
+
+.dish .img img {
+    width: 95%;
+    height: 53%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: none;
+    transform: none;
+     box-shadow: none;
+  }
+
+  .dish .img::before {
+    opacity: 0 !important;
+}
+
+.dish .img:hover a {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+.box {
+    width: 90%; /* Full width for small screens */
+    max-width: 180px; /* Prevent it from growing too much */
+}
+
+.box-container {
+    gap: 10px; /* Reduce gap further */
+    padding: 10px; /* Reduce padding to fit content */
+}
+
+}
